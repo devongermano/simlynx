@@ -63,9 +63,19 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "circular";
+  src:url("assets/fonts/webfontkit-circular/Circular.woff2") format("woff2"),url("assets/fonts/webfontkit-circular/Circular.woff") format("woff"),url("assets/fonts/webfontkit-circular/Circular.otf") format("opentype");
+  font-weight: normal;
+  font-style:normal;
+}
+
+* {
+  font-family: circular, sans-serif;
+}
+
 body {
   overflow-x: hidden;
-  background: $primary-color;
   content: '';
 }
 

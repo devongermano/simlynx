@@ -1,0 +1,7 @@
+
+@font-face {
+    font-family:"CircularStd-Book";
+    src:url("Circular.woff2") format("woff2"),url("Circular.woff") format("woff"),url("Circular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        

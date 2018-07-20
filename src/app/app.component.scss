@@ -26,7 +26,7 @@
 }
 
 .content {
-  margin-top: 80px;
+  padding-top-top: 80px;
   height: 100%;
 }
 
@@ -34,22 +34,24 @@
   font-family: avantgarde_lt_mediumbold, sans-serif;
   width: 100%;
   font-size: 60px;
-  color: #ffffff;
-  text-align: center;
+  color: $dark;
 }
 
 .dark-callout {
   font-family: avantgarde_lt_mediumbold, sans-serif;
-  font-size: 100px;
-  color: $primary-dark;
-  text-align: center;
+  font-size: 80px;
+  color: $dark;
+}
+
+.links {
+  .link-button {
+    margin-right: 20px;
+  }
 }
 
 .link-button {
-  font-family: avantgarde_lt_mediumbold, sans-serif;
   color: white;
   font-size: 14px;
-  margin-right: 20px;
   background-color: transparent;
   border: none;
 }
@@ -85,6 +87,11 @@
     font-size: 26px;
     margin-bottom: 10px;
   }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .logo-card {
@@ -97,28 +104,138 @@
 .panel-1 {
   display: flex;
   align-items: center;
-  height: 80%;
+  height: 95%;
+  background-image: url("../assets/img/drone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
 }
 
 .panel-2 {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  min-height: 40%;
+  padding: 100px 0 100px 0;
+  .panel-2-internal {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+  }
 }
 
 .panel-2a {
   display: flex;
   align-items: center;
-  background-color: #24262b;
-  height: 40%;
+  background-color: $dark;
+  height: 100%;
 }
 
 
 .panel-3 {
+  padding: 100px 0 100px 0;
+  .panel-3-internal {
+    display: flex;
+    align-items: center;
+    //background-color: $primary-color;
+    width: 100%;
+  }
+}
+
+.panel-4 {
+  background-color: $dark;
+  padding: 100px 0 100px 0;
+  .panel-4-internal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.footer-links {
+  li {
+    color: white;
+  }
+}
+
+.panel-short {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  background-color: $primary-color;
-  height: 75%;
+}
+
+
+
+
+#sd {
+  &-container {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+  }
+}
+
+.arrow {
+  position: relative;
+  width: 42px;
+  height: 16px;
+  opacity: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    width:21px;
+    height: 2px;
+    background-color: #373737;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  &::before {
+    transform: rotate(45deg) translateX(25%)
+  }
+
+  &::after {
+    transform: rotate(-45deg) translateX(-25%)
+  }
+
+  &:nth-child(1) {
+    top: -50px;
+    opacity: 1;
+    animation: arrow2 1s ease 0s infinite;
+  }
+
+  &:nth-child(2) {
+    top: -25px;
+    animation: arrow1 1s ease 0.25s infinite;
+  }
+}
+
+@keyframes arrow1 {
+  from {
+    opacity: 0;
+    top: -25px;
+  }
+
+  to {
+    opacity: 0;
+    top: 0px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow2 {
+  from {
+    opacity: 0;
+    top: -35px;
+  }
+
+  to {
+    opacity: 0;
+    top: -10px;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
