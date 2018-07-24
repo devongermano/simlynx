@@ -24,12 +24,11 @@ export class AppComponent implements AfterViewInit {
     menu: '.header',
     verticalCentered: false,
     navigation: true,
-    dragAndMove: true,
 
     // menu: '.menu',
     // css3: true,
     anchors: [
-      'Home', 'Gist', 'Flavors',
+      'Home', 'Gist', 'Yeah', 'Flavors',
       'Meat', 'End'
     ]
   });

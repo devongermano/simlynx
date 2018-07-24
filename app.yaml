@@ -28,6 +28,12 @@ handlers:
   static_files: static/\1
   upload: static/.*
 
+# All files that can be compiled in angular. Luckily, they all have suffixes.
+- url: /(.*\.(css|eot|gz|html|ico|js|map|png|svg|ttf|woff|woff2))
+  static_files: static/\1
+  upload: static/.*
+
+
 # Any other requests are routed to index.html for angular to handle so we don't need hash URLs
 - url: /.*
   secure: always
