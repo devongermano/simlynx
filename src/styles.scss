@@ -55,20 +55,20 @@ table {
 
 //----------------------------------->>>>
 
-@font-face {
-  font-family: 'avantgarde_lt_mediumbold';
-  src: url('assets/fonts/webfontkit-avant/itc_avant_garde_gothic_lt_bold_1-webfont.woff2') format('woff2'),
-  url('assets/fonts/webfontkit-avant/itc_avant_garde_gothic_lt_bold_1-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "circular";
-  src:url("assets/fonts/webfontkit-circular/Circular.woff2") format("woff2"),url("assets/fonts/webfontkit-circular/Circular.woff") format("woff"),url("assets/fonts/webfontkit-circular/Circular.otf") format("opentype");
-  font-weight: normal;
-  font-style:normal;
-}
+//@font-face {
+//  font-family: 'avantgarde_lt_mediumbold';
+//  src: url('./assets/fonts/webfontkit-avant/itc_avant_garde_gothic_lt_bold_1-webfont.woff2') format('woff2'),
+//  url('./assets/fonts/webfontkit-avant/itc_avant_garde_gothic_lt_bold_1-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "circular";
+//  src:url("./assets/fonts/webfontkit-circular/Circular.woff2") format("woff2"),url("assets/fonts/webfontkit-circular/Circular.woff") format("woff"),url("assets/fonts/webfontkit-circular/Circular.otf") format("opentype");
+//  font-weight: normal;
+//  font-style:normal;
+//}
 
 * {
   font-family: circular, sans-serif;

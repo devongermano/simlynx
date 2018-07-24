@@ -1,17 +1,18 @@
-import {Component, Input} from '@angular/core';
+import {AfterViewInit, Component, Input} from '@angular/core';
 
-import * as animateOnScroll from 'aos';
 import {MnFullpageOptions, MnFullpageService} from 'ngx-fullpage';
 
+import * as Rellax from 'rellax';
+import * as animateOnScroll from 'aos';
 export const aos = animateOnScroll;
-import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'app';
 
 
@@ -22,19 +23,23 @@ export class AppComponent {
     scrollBar: true,
     menu: '.header',
     verticalCentered: false,
-    dragAndMove: true,
     navigation: true,
+    dragAndMove: true,
 
     // menu: '.menu',
     // css3: true,
     anchors: [
-      'menuAnchor1', 'menuAnchor2', 'menuAnchor3',
-      'menuAnchor4', 'menuAnchor5', 'menuAnchor6'
+      'Home', 'Gist', 'Flavors',
+      'Meat', 'End'
     ]
   });
 
   constructor(public fullpage: MnFullpageService) {
     aos.init();
+  }
+
+  ngAfterViewInit() {
+    let rellax = new Rellax('.rellax');
   }
 
 }

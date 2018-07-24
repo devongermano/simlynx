@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-//        "../node_modules/aos/dist/aos.css",
+        "../node_modules/aos/dist/aos.css",
         "../node_modules/fullpage.js/dist/fullpage.css"
       ],
       "scripts": [
